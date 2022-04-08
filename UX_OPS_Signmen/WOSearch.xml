@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--=========================================================================================================
+  WARNING!!!
+  Do not edit this "base" XML file. All changes will be overwritten whenever Cityworks is installed or updated
+  To modify the form, create an "overriding" XML file that only includes the desired changes to this base file.
+  
+  Azteca Systems does not support editing XML Base files and cannot be held accountable or liable for changes.
+    - Please visit https://mycityworks.force.com/s/contactsupport for more information.
+=============================================================================================================-->
+<webLayoutBase version="1" id="WOSearch" xmlns="http://www.azteca.com/cityworks/layout/webLayout">
+  <controls>
+     <control id="Text3" visible="true" searchText="Temporary"></control> 
+     <control id="Text4" visible="true"></control> 
+  </controls>
+  <layout>
+     <zone id="zoneWOSearch">
+      <column id="col1">
+
+        <tabset id="tabset1" width="570">
+          <tab id="tabUCF">
+            <tabTitle>
+              <text>Signmen</text>
+            </tabTitle>
+            <title id="title_UCF">
+              <text>Additional Query</text>
+            </title>
+            <row>
+              <label id="label_Text3" style="font-weight:bold; font-size:12pt">
+                <text>Temporary</text>
+                <linkedControls>
+                  <control id="Text3" />
+                </linkedControls>
+              </label>
+              <controlContainer type="long" style="font-color:blue; font-weight:bold; font-size:12pt;">
+                <linkedControls>
+                  <control id="Text3" />
+                </linkedControls>
+              </controlContainer>
+              <label id="label_Text4">
+                <text>Auger</text>
+                <linkedControls>
+                  <control id="Text4" />
+                </linkedControls>
+              </label>
+              <controlContainer type="long">
+                <linkedControls>
+                  <control id="Text4" />
+                </linkedControls>
+              </controlContainer>
+            </row>
+        </tab>
+      </tabset>
+
+      </column>
+    </zone>
+      
+  </layout>
+  <messages>
+  </messages>
+</webLayoutBase>

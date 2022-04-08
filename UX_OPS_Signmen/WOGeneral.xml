@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webLayout xmlns="http://www.azteca.com/cityworks/layout/webLayout">
+<controls>
+ <control id="Text1" visible="true"></control>
+ <control id="Text2" visible="true"></control>
+ <control id="Text3" visible="true"></control> 
+ <control id="Text4" visible="true"></control> 
+ 
+</controls>
+  
+  
+<layout>
+
+ 	<label id="label_txtMapPage">
+        <text>Neighbourhood:</text>
+  </label>
+
+  <label id="label_txtTileNo">
+      <text>Legal Desc:</text>
+  </label>
+
+  <label id="label_cboDistrict">
+      <text>Division:</text>
+  </label>
+
+  <label id="label_txtFacility_Id">
+      <text>Township:</text>
+  </label>
+		 
+		 
+		 
+  <panel id="WorkActivities" width="482px">
+      <title id="title_WorkActivitiesPermits" visible="false">
+          <text>Permits</text>
+          <linkedControls>
+            <control id="cboCaseTypes" />
+            <control id="btnCreateCase" />
+            <control id="grdCases" />
+          </linkedControls>
+        </title>
+        <row visible="false">
+          <controlContainer>
+            <linkedControls>
+              <control id="cboCaseTypes" />
+              <control id="btnCreateCase" />
+            </linkedControls>
+          </controlContainer>
+        </row>
+        <row visible="false">
+          <controlContainer cssClass="noSpace" width="100%" style="border-top:solid 1px #bbb; margin-top:4px;">
+            <linkedControls>
+              <control id="grdCases" />
+            </linkedControls>
+          </controlContainer>
+        </row>
+  
+  </panel>
+	  
+  <panel id="UniversalCustomFieldsPanel" width="482px" float="left" moveBefore="General">
+          <panelTitle>
+            <text>Sign Information</text>
+          </panelTitle>
+          <row>
+            <label id="label_Text1" style="color:red; font-weight:bold; font-size:13pt" >
+              <text>Code:</text>
+              <linkedControls>
+                <control id="Text1"/>
+              </linkedControls>
+            </label>
+            <controlContainer style="font-color:blue; font-weight:bold; font-size:12pt;">
+              <linkedControls >
+                <control id="Text1" />
+              </linkedControls>
+            </controlContainer>
+			
+            <label id="label_Text2" style="font-weight:bold; font-size:12pt">
+              <text>Desc:</text>
+              <linkedControls>
+                <control id="Text2" />
+              </linkedControls>
+            </label>
+            <controlContainer style="font-color:blue; font-weight:bold; font-size:12pt;">
+              <linkedControls>
+                <control id="Text2" />
+              </linkedControls>
+            </controlContainer>
+          </row>		
+	</panel>
+
+  <panel id ="checkPointsPanel" width="482px" float="left"  moveBefore="General">
+
+  <panelTitle>
+    <text>CheckList</text>
+  </panelTitle>
+  
+    <row id="cRow0">
+
+    <controlContainer cssClass="noSpace" width="100%"></controlContainer>
+    <label id="check0">
+      <text>
+    
+      </text>	
+    </label>
+    </row>
+    
+    <row>
+      <label id="label_Text3" style="display:none" >
+        <text></text>
+        <linkedControls>
+          <control id="Text3"/>
+        </linkedControls>
+      </label>
+      <controlContainer style="display:none" cssClass="txtTempSign">
+        <linkedControls >
+          <control id="Text3" />
+        </linkedControls>
+      </controlContainer>
+
+      <label id="label_Text4" style="display:none">
+        <text></text>
+        <linkedControls>
+          <control id="Text4" />
+        </linkedControls>
+      </label>
+      <controlContainer style="display:none" cssClass="txtAuger">
+        <linkedControls>
+          <control id="Text4" />
+        </linkedControls>
+      </controlContainer>
+    </row>
+  
+</panel>
+
+		<label id="CustomCode" type="plain" moveAfter="Details">
+			  <text>
+				<![CDATA[
+				    <style>
+						.input-disabled{background-color:#EBEBE4;
+						                border:1px solid #ABADB3;
+										padding:2px 1px;
+										color:#FFFFF;
+										}
+					</style>
+	
+        <script src="http://devrvc-cwrks01.mdrockyview.ab.ca/cwrks/Xml/CustomScripts/WOGeneral/Ops_Signmen/CheckList.js">
+			  </script>	
+				]]>
+			  </text>			  
+		</label>
+
+  </layout>
+  <messages>
+  </messages>
+</webLayout>
